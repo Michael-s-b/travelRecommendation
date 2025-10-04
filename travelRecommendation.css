@@ -1,0 +1,151 @@
+/* travelRecommendation.css */
+
+/* Reset some default styles */
+body, h1, h2, h4, p, nav, section, footer, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #222;
+    padding-bottom: 60px; /* space for footer */
+}
+
+nav {
+    background: rgba(255,255,255,0.85);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #0b3d91;
+}
+
+nav div {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 32px 0 16px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #0b3d91;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 24px 0 12px 0;
+    color: #1a73e8;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 0 0 24px 0;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+}
+
+section {
+    background: rgba(255,255,255,0.92);
+    margin: 32px auto;
+    padding: 24px 32px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+button {
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0b3d91;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 6px 0 16px 0;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    resize: vertical;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #222;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    z-index: 100;
+}
+
+footer a {
+    margin: 0 18px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #0b3d91;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+@media (max-width: 700px) {
+    nav, section {
+        padding: 12px 8px;
+    }
+    section {
+        max-width: 95vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
